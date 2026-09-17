@@ -1,0 +1,78 @@
+/* ==========================================
+   RESET E BASE
+   Reset universal, fundo da página e proteção
+   contra rolagem horizontal em qualquer tela.
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+/* Rede de segurança para responsividade: impede rolagem horizontal
+   em qualquer celular, tablet ou notebook, independente do tamanho da tela */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    background-color: var(--bg-global);
+    color: var(--texto-escuro);
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    min-width: 320px;
+}
+
+/* Garante que nenhuma imagem, vídeo ou iframe ultrapasse a largura do
+   contêiner, mesmo em telas muito pequenas */
+img, video, iframe, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tabelas eventuais também não devem quebrar o layout em telas pequenas */
+table {
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+}
+
+/* Fundo fixo em degradê azul clarinho — permanece parado na tela durante
+   toda a rolagem da página, aparecendo atrás das seções sem fundo sólido. */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 15% 0%, rgba(41, 159, 221, 0.16) 0%, rgba(41, 159, 221, 0) 55%),
+                linear-gradient(180deg, #eaf5fc 0%, #f4f8fb 45%, #ffffff 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Garante que o conteúdo real fique sempre acima do papel de parede */
+.menu-principal,
+.banner,
+.secao,
+.footer-principal,
+.whats-flutuante {
+    position: relative;
+    z-index: 1;
+}
+
+/* Configuração universal de containers */
+.container, .container-menu, .container-banner {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    width: 100%;
+    padding: var(--padding-container);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

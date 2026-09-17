@@ -1,0 +1,153 @@
+/* ==========================================
+   RESPONSIVIDADE
+   ========================================== */
+
+.botao-menu-mobile {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--cor-primaria-azul);
+    font-size: 30px;
+    line-height: 0;
+}
+
+@media (max-width: 960px) {
+    .container-banner .textos {
+        max-width: 100%;
+    }
+
+    .duas-colunas {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .duas-colunas .coluna-imagem {
+        min-height: 260px;
+        order: -1;
+    }
+
+    .coluna-imagem.coluna-imagem-foto {
+        min-height: 240px;
+    }
+
+    .coluna-imagem.coluna-imagem-foto img {
+        height: 240px;
+    }
+
+    .carrossel-sobre {
+        height: 240px;
+    }
+
+    .layout-form {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+}
+
+@media (max-width: 860px) {
+    .botao-menu-mobile {
+        display: block;
+    }
+
+    .container-menu {
+        flex-wrap: wrap;
+    }
+
+    .navegacao {
+        order: 3;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .navegacao.menu-aberto {
+        max-height: 400px;
+        margin-top: 20px;
+    }
+
+    .navegacao ul {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .navegacao ul li {
+        margin: 0;
+    }
+
+    .link-menu {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(9, 44, 92, 0.08);
+    }
+
+    .botao-area {
+        order: 2;
+    }
+
+    .banner {
+        padding: 90px 0;
+        min-height: auto;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+
+    .numero-destaque {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .secao {
+        padding: 60px 0;
+    }
+
+    .secao-cabecalho h2 {
+        font-size: 26px;
+    }
+
+    .cta-final h2 {
+        font-size: 22px;
+    }
+
+    .banner-cta-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner-cta-row .btn-primario,
+    .banner-cta-row .btn-secundario {
+        width: 100%;
+    }
+
+    .form-card {
+        padding: 26px 20px;
+    }
+
+    .cookie-banner-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .cookie-banner-botoes {
+        width: 100%;
+    }
+
+    .cookie-banner-botoes button {
+        flex: 1;
+    }
+}

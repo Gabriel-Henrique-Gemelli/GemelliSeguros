@@ -1,0 +1,150 @@
+/* ==========================================
+   ASSISTÊNCIA 24H E SEGURADORAS DE PLANTÃO
+   Faixa de destaque do telefone de assistência e
+   o quadro de seguradoras com hover/toque.
+   ========================================== */
+
+/* Faixa de destaque do número de assistência (abaixo do header) */
+.faixa-destaque-assistencia {
+    background-color: var(--cor-secundaria-azul);
+    position: relative;
+    z-index: 1;
+}
+
+.faixa-destaque-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px var(--padding-container);
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.faixa-destaque-conteudo .material-icons {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.faixa-texto {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.faixa-numero {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+}
+
+.faixa-numero:hover {
+    text-decoration: underline;
+}
+
+/* Quadro de seguradoras com telefone de plantão no hover/toque */
+.grade-seguradoras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.seguradora-card {
+    position: relative;
+    height: 136px;
+    border-radius: var(--radius-card);
+    background-color: var(--bg-card);
+    border: 1px solid rgba(9, 44, 92, 0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    padding: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.seguradora-logo-badge {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.25s ease;
+}
+
+.seguradora-logo-badge img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.seguradora-nome {
+    color: var(--cor-primaria-azul);
+    font-weight: 700;
+    font-size: 15px;
+    transition: opacity 0.25s ease;
+}
+
+.seguradora-plantao {
+    position: absolute;
+    inset: 0;
+    background-color: var(--cor-primaria-azul);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-weight: 700;
+    font-size: 15px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.28s ease, opacity 0.28s ease;
+}
+
+.seguradora-plantao .material-icons {
+    font-size: 22px;
+}
+
+.seguradora-cg-link {
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: underline;
+    opacity: 0.85;
+}
+
+.seguradora-cg-link:hover {
+    opacity: 1;
+}
+
+.seguradora-card:hover .seguradora-nome,
+.seguradora-card:focus .seguradora-nome,
+.seguradora-card.ativa .seguradora-nome,
+.seguradora-card:hover .seguradora-logo-badge,
+.seguradora-card:focus .seguradora-logo-badge,
+.seguradora-card.ativa .seguradora-logo-badge {
+    opacity: 0;
+}
+
+.seguradora-card:hover .seguradora-plantao,
+.seguradora-card:focus .seguradora-plantao,
+.seguradora-card.ativa .seguradora-plantao {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.aviso-seguradoras {
+    margin-top: 18px;
+    font-size: 12px;
+    color: var(--texto-mutado);
+    text-align: center;
+}
+

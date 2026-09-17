@@ -1,0 +1,85 @@
+/* ==========================================
+   LAYOUT EM COLUNAS
+   Duas colunas (texto + imagem) e o layout de
+   formulário com barra lateral (Cotação/Contato).
+   ========================================== */
+
+/* Duas colunas (texto + imagem/lista) */
+.duas-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.duas-colunas .coluna-texto h2 {
+    color: var(--cor-primaria-azul);
+    font-size: 30px;
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+.duas-colunas .coluna-texto p {
+    color: var(--texto-mutado);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.duas-colunas .coluna-imagem {
+    background: linear-gradient(135deg, #e6f4fc 0%, #ffffff 100%);
+    border-radius: var(--radius-card);
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(41, 159, 221, 0.12);
+    padding: 40px;
+    text-align: center;
+}
+
+.coluna-imagem img {
+    max-width: 60%;
+    height: auto;
+}
+
+/* Variante para fotos reais (ex: página de detalhe do produto) —
+   preenche o espaço todo em vez de centralizar um ícone pequeno. */
+.coluna-imagem.coluna-imagem-foto {
+    background: none;
+    border: none;
+    padding: 0;
+    min-height: 420px;
+    overflow: hidden;
+}
+
+.coluna-imagem.coluna-imagem-foto img {
+    max-width: 100%;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: var(--radius-card);
+    box-shadow: 0 20px 40px rgba(15, 55, 90, 0.15);
+}
+/* Layout de duas colunas para páginas com formulário (Cotação / Contato) */
+.layout-form {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.lateral-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.lateral-info .card {
+    width: 100%;
+}
+
+.lateral-info .card h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

@@ -1,0 +1,69 @@
+/* ==========================================
+   BOTÕES
+   Estilos de botão reutilizados em todo o site
+   (menu, banners, seções, formulários).
+   ========================================== */
+
+.botao-cotacao {
+    background-color: var(--cor-secundaria-azul);
+    color: var(--texto-claro);
+    padding: 12px 24px;
+    border-radius: var(--radius-botao);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao-cotacao:hover {
+    background-color: var(--cor-secundaria-hover);
+}
+
+/* Botões */
+.btn-primario,
+.btn-secundario {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: var(--radius-botao);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.25s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-primario {
+    background-color: var(--cor-secundaria-azul);
+    color: var(--texto-claro);
+}
+
+.btn-primario:hover {
+    background-color: var(--cor-secundaria-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: var(--cor-primaria-azul);
+    border-color: rgba(9, 44, 92, 0.25);
+}
+
+.secao-escura .btn-secundario {
+    color: var(--texto-claro);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.btn-secundario:hover {
+    border-color: var(--cor-secundaria-azul);
+    color: var(--cor-secundaria-azul);
+}
+
+.secao-escura .btn-secundario:hover {
+    border-color: var(--texto-claro);
+    color: var(--texto-claro);
+}
+

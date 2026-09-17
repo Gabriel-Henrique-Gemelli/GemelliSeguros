@@ -1,0 +1,114 @@
+/* ==========================================
+   FORMULÁRIOS E MAPA
+   Campos de formulário (Cotação/Contato) e o
+   mapa de localização incorporado.
+   ========================================== */
+
+/* Formulários */
+.form-card {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-card);
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(41, 159, 221, 0.1);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-grid .campo-full {
+    grid-column: 1 / -1;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--cor-primaria-azul);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 13px 16px;
+    border-radius: var(--radius-botao);
+    border: 1px solid rgba(9, 44, 92, 0.15);
+    font-size: 14px;
+    color: var(--texto-escuro);
+    background-color: #fbfdff;
+    font-family: var(--fonte-principal);
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: var(--cor-secundaria-azul);
+    box-shadow: 0 0 0 3px rgba(41, 159, 221, 0.15);
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.form-obs {
+    font-size: 13px;
+    color: var(--texto-mutado);
+    margin-top: 14px;
+}
+
+.form-msg-sucesso {
+    display: none;
+    background-color: rgba(37, 211, 102, 0.12);
+    color: #1a8f4c;
+    border: 1px solid rgba(37, 211, 102, 0.3);
+    border-radius: var(--radius-botao);
+    padding: 14px 18px;
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+.form-msg-sucesso.ativo {
+    display: block;
+}
+
+/* Mapa */
+.mapa-wrapper {
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    border: 1px solid rgba(9, 44, 92, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.mapa-wrapper iframe {
+    width: 100%;
+    height: 380px;
+    border: 0;
+    display: block;
+}
+
+/* Mapa de localização (página de contato) */
+.mapa-localizacao {
+    width: 100%;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    margin-top: 12px;
+    border: 1px solid rgba(9, 44, 92, 0.08);
+}
+
+.mapa-localizacao iframe {
+    width: 100%;
+    height: 220px;
+    border: 0;
+    display: block;
+}

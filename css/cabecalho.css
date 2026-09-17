@@ -1,0 +1,64 @@
+/* ==========================================
+   CABEÇALHO (MENU PRINCIPAL)
+   Logo, navegação, botão de cotação do menu
+   e o ícone flutuante de WhatsApp.
+   ========================================== */
+
+.menu-principal {
+    background-color: var(--bg-card);
+    padding: 30px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo img {
+    height: 62px;           /* Logo completa (marca + nome), recortada sem excesso de área transparente */
+    width: auto;            /* Mantém a proporção correta */
+    object-fit: contain;
+    display: block;
+}
+
+.navegacao ul {
+    display: flex;
+    list-style: none;
+}
+
+.navegacao ul li {
+    margin: 0 20px;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: var(--cor-primaria-azul);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link-menu:hover, .link-menu.active {
+    color: var(--cor-secundaria-azul);
+}
+
+/* Ícone do WhatsApp Flutuante (aparece em todas as páginas) */
+.whats-flutuante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--cor-whatsapp);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--texto-claro);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+    z-index: 9999;
+    /* "bottom" também é animado: quando o aviso de cookies aparece,
+       o JS ajusta esse valor para o botão subir e não ficar
+       escondido atrás da barra. */
+    transition: transform 0.3s ease, bottom 0.3s ease;
+}
+
+.whats-flutuante:hover {
+    transform: scale(1.1);
+}

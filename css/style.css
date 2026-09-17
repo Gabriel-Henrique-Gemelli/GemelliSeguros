@@ -1,0 +1,43 @@
+/* ==========================================
+   ARQUIVO PRINCIPAL — GEMELLI SEGUROS
+   Este arquivo só importa os demais, na ordem
+   certa de cascata. Cada assunto do site tem
+   seu próprio arquivo, mais fácil de achar e editar:
+
+   1. variaveis.css          -> cores, fontes, espaçamentos
+   2. reset.css              -> reset e base da página
+   3. cabecalho.css          -> menu, logo, WhatsApp flutuante
+   4. banner.css             -> banner do topo das páginas
+   5. botoes.css             -> botões (primário/secundário/cotação)
+   6. secoes-base.css        -> estrutura padrão de cada seção
+   7. cards-numeros.css      -> cards, números, serviços, canais
+   8. colunas-layout.css     -> layouts de duas colunas
+   9. carrossel-galeria.css  -> carrossel e galeria de fotos
+  10. produtos-tabs.css      -> abas de categorias de produtos
+  11. formularios-mapa.css   -> formulários e mapa
+  12. depoimentos.css        -> depoimentos de clientes
+  13. assistencia-plantao.css-> assistência 24h e seguradoras
+  14. cookies.css            -> aviso de cookies (LGPD)
+  15. conteudo-legal.css     -> texto corrido (Política de Privacidade)
+  16. footer.css             -> rodapé
+  17. responsivo.css         -> ajustes para celular/tablet
+      (sempre por último, para sobrescrever o resto)
+   ========================================== */
+
+@import url('variaveis.css');
+@import url('reset.css');
+@import url('cabecalho.css');
+@import url('banner.css');
+@import url('botoes.css');
+@import url('secoes-base.css');
+@import url('cards-numeros.css');
+@import url('colunas-layout.css');
+@import url('carrossel-galeria.css');
+@import url('produtos-tabs.css');
+@import url('formularios-mapa.css');
+@import url('depoimentos.css');
+@import url('assistencia-plantao.css');
+@import url('cookies.css');
+@import url('conteudo-legal.css');
+@import url('footer.css');
+@import url('responsivo.css');

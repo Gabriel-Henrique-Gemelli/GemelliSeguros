@@ -1,0 +1,63 @@
+/* ==========================================
+   CATEGORIAS DE PRODUTOS (ABAS)
+   Filtros/tabs da página de Produtos.
+   ========================================== */
+
+/* Categoria de produtos (tabs simples) */
+.categorias-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.categoria-tag {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--bg-card);
+    color: var(--cor-primaria-azul);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(9, 44, 92, 0.1);
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.categoria-tag .material-icons {
+    font-size: 18px;
+}
+
+.categoria-tag:hover {
+    background-color: var(--cor-secundaria-azul);
+    color: var(--texto-claro);
+    border-color: var(--cor-secundaria-azul);
+}
+
+.categoria-tag.ativa {
+    background-color: var(--cor-primaria-azul);
+    color: var(--texto-claro);
+    border-color: var(--cor-primaria-azul);
+}
+
+.subgrupo-titulo {
+    color: var(--cor-primaria-azul);
+    font-size: 20px;
+    margin: 50px 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subgrupo-titulo:first-of-type {
+    margin-top: 0;
+}
+
+.subgrupo-titulo .material-icons {
+    color: var(--cor-secundaria-azul);
+}

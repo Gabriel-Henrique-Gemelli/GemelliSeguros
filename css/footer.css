@@ -1,0 +1,184 @@
+/* ==========================================
+   FOOTER OTIMIZADO
+   ========================================== */
+
+.footer-principal {
+    /* Garante um fundo sólido e uma cor padrão clara para contraste */
+    background-color: var(--cor-primaria-escura); 
+    color: #ffffff; 
+    padding-top: 60px;
+    font-family: sans-serif; /* Certifique-se de herdar a fonte do seu projeto */
+}
+
+.footer-conteudo {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: var(--padding-container);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-coluna {
+    flex: 1;
+    min-width: 160px;
+}
+
+.footer-marca {
+    flex: 1.4;
+    min-width: 260px;
+}
+
+.footer-logo {
+    height: 34px;
+    width: auto;
+    margin-bottom: 16px;
+    display: block;
+}
+
+/* CORRIGIDO: O título principal agora tem destaque total */
+.footer-tagline {
+    color: #ffffff; 
+    font-size: 22px; /* Aumentado ligeiramente se for texto puro */
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+/* CORRIGIDO: Texto de descrição com melhor opacidade para leitura */
+.footer-descricao {
+    color: rgba(255, 255, 255, 0.75); 
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+    max-width: 320px;
+}
+
+.footer-susep {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-redes a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Feedback visual mais moderno no hover das redes sociais */
+.footer-redes a:hover {
+    background-color: #ffffff;
+    color: var(--cor-primaria-escura);
+    transform: translateY(-3px);
+}
+
+.footer-redes svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+/* CORRIGIDO: Títulos das colunas em branco puro e caixa alta */
+.footer-titulo {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.footer-logo {
+    height: auto;          /* Deixa a altura livre para não distorcer */
+    max-width: 180px;      /* Define um limite máximo elegante para a largura */
+    margin-bottom: 16px;
+    display: block;
+}
+/* Opcional: Uma linha sutil abaixo dos títulos das colunas (estilo moderno) */
+.footer-titulo::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 8px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links li:last-child {
+    margin-bottom: 0;
+}
+
+/* CORRIGIDO: Links legíveis que ganham opacidade total no hover */
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    transform: translateX(4px); /* Sutil efeito de deslocamento */
+}
+
+/* Lista de contato */
+.footer-contato-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contato-lista li {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* BASE DO FOOTER */
+.footer-base {
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-base-conteudo {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: 22px var(--padding-container);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-base-conteudo p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    margin: 0;
+}

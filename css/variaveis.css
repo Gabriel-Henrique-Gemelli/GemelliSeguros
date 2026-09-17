@@ -1,0 +1,34 @@
+/* ==========================================
+   VARIÁVEIS GLOBAIS
+   Cores, espaçamentos e fontes usados no site inteiro.
+   Mude aqui para refletir em todas as páginas.
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    /* Cores Principais */
+    --cor-primaria-escura: #1e87be;
+    --cor-primaria-azul: #092c5c;
+    --cor-secundaria-azul: #299fdd;
+    --cor-secundaria-hover: #1e87be;
+    --cor-whatsapp: #25d366;
+
+    /* Cores de Fundo e Texto */
+    --bg-global: #f4f8fb;
+    --bg-card: #ffffff;
+    --texto-escuro: #4a5568;
+    --texto-claro: #ffffff;
+    --texto-mutado: #718096;
+    --texto-mutado-claro: rgba(255, 255, 255, 0.6);
+    --marca-dagua-cor: rgba(134, 181, 247, 0.25);
+
+    /* Espaçamentos e Medidas */
+    --max-width-container: 1200px;
+    --padding-container: 0 20px;
+    --radius-botao: 6px;
+    --radius-card: 16px;
+
+    /* Fontes */
+    --fonte-principal: 'Roboto', Arial, sans-serif;
+}

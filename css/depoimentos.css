@@ -1,0 +1,50 @@
+/* ==========================================
+   DEPOIMENTOS
+   Cards de depoimentos de clientes.
+   ========================================== */
+
+/* Depoimentos */
+.depoimento-card {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-card);
+    padding: 30px;
+    border: 1px solid rgba(9, 44, 92, 0.06);
+}
+
+.depoimento-card p {
+    font-size: 15px;
+    color: var(--texto-escuro);
+    line-height: 1.7;
+    margin-bottom: 18px;
+    font-style: italic;
+}
+
+.depoimento-autor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.depoimento-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgba(41, 159, 221, 0.15);
+    color: var(--cor-primaria-azul);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.depoimento-autor strong {
+    display: block;
+    font-size: 14px;
+    color: var(--cor-primaria-azul);
+}
+
+.depoimento-autor span {
+    font-size: 12px;
+    color: var(--texto-mutado);
+}
+

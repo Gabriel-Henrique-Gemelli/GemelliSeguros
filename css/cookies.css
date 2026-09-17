@@ -1,0 +1,94 @@
+/* ==========================================
+   AVISO DE COOKIES (LGPD)
+   Barra fixa exibida até o visitante escolher uma
+   opção. A escolha fica salva no navegador dele
+   (localStorage) e não é perguntada de novo.
+   ========================================== */
+
+.cookie-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(110%);
+    z-index: 10000;
+    background-color: var(--cor-primaria-azul);
+    box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.18);
+    transition: transform 0.4s ease;
+}
+
+.cookie-banner.visivel {
+    transform: translateY(0);
+}
+
+.cookie-banner-conteudo {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: 22px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cookie-banner-icone {
+    color: var(--cor-secundaria-azul);
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.cookie-banner-texto {
+    flex: 1;
+    min-width: 240px;
+}
+
+.cookie-banner-texto p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+.cookie-banner-texto a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.cookie-banner-botoes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.cookie-banner-botoes button {
+    font-family: inherit;
+}
+
+.cookie-banner-botoes .btn-secundario {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.4);
+    background-color: transparent;
+}
+
+.cookie-banner-botoes .btn-secundario:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Link "Gerenciar cookies" no rodapé */
+.footer-base-links {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+}
+
+.footer-base-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+
+.footer-base-links a:hover {
+    color: #ffffff;
+}
